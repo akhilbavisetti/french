@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+      
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.header-car{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(img/wp8344297-24-hours-of-le-mans-wallpapers.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation-name: myani;
+    animation-duration: 16.5s;
+    transition: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes myani {
+    0%{background-image: url(img/wp8344297-24-hours-of-le-mans-wallpapers.jpg);}
+    55%{background-image: url(img/6720baeb75b5c.jpg);}
+    95%{background-image: url(img/666dc17da057c.jpg);}
+}
+nav img{
+    height: 70px;
+    width: 110px;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.history{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+.ts{
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.his-col{
+    flex-basis: 31%;
+    background: #EDDFE0;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.his-col img{
+    height: 200px;
+    width: 300px;
+}
+.his-col:hover{
+    box-shadow: 0 0 20px 0px rgba(14, 0, 0, 0.719);
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h2{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px  0 25px;
+}
+.about-col img{
+    padding: 5px;
+	border-radius: 1rem;
+	box-shadow: 1px 2px 10px 2px black;
+}
+.about-col h2{
+    font-size: 40px;
+    font-weight: 300px;
+}
+.about-col  p{
+    font-size: 19x;
+    color: black;
+}
+.cha{
+    margin-top: 1px;
+    gap: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+#atm {
+    border-radius:  72% 28% 35% 65% / 19% 34% 66% 81%  ; 
+    background-color: red;
+}
+.food{
+    margin: 50px;
+}
+.food-co{
+	margin-top: 15px;
+	display: flex;
+	gap: 5px;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.fdim{
+	height: 300px;
+	width: 400px;
+	padding: 5px;
+	border-radius: 1rem;
+	box-shadow: 1px 2px 10px 2px black;
+}
+.food-t{
+	margin-top: 5px;
+    font-size: 30px;
+}
+.food-t > p{
+	margin-top: 2px;
+}
+
+.mySlides {
+    display: none
+}
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.text{
+    color: black;
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+.dot{
+ height: 10px;
+  width: 10px;
+}
+}
+@media only screen and (max-width: 600px) {
+  .prev, .next,.text {font-size: 14px}
+}
