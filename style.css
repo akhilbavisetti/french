@@ -1,0 +1,290 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+      
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(img/french-open-tennis-stadium-vxksieojtgqolycr.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav img{
+    height: 60px;
+    width: 100px;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-linkes{
+    flex: 1;
+    text-align: right;
+}
+.nav-linkes ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-linkes ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-linkes ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-linkes ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+.bt{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.bt:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+.history{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.ts{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.his-col{
+    flex-basis: 31%;
+    background: #EDDFE0;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.his-col:hover{
+    box-shadow: 0 0 20px 0px rgba(14, 0, 0, 0.719);
+}
+#gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-height: 100vh;
+    background-color: #c0f3c0;
+}
+
+.img-card{
+    width: 4rem;
+    height: 480px;
+    margin: 0.5rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    position: relative;
+    cursor: pointer;
+    background-color: #24242436;
+    transition: all 0.75s ease-in-out;
+}
+.img-card.active{
+    width: 50vw;
+}
+.img-card:not(.active):hover {
+    transform: scale(1.05);
+    box-shadow: 0 24px 34px -12px #10101094;
+}
+.img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-card label{
+    padding: 1.25rem;
+    border: 1px solid #fff3;
+    border-radius: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: white;
+    backdrop-filter: blur(8px) brightness(85%);
+    -webkit-backdrop-filter: blur(8px) brightness(85%);
+    font-size: 25px;
+    font-weight: 600;
+    word-break: break-all;
+    text-transform: uppercase;
+}
+
+.img-card.active label{
+    font-size: 1rem;
+    bottom: 1rem;
+    left: 0.75rem;
+    right: 0.75rem;
+    border-radius: 16px;
+}
+.img-card label span {
+    display: block;
+    font-size: 0rem;
+    text-transform: none;
+    padding-top: 0.5;
+    font-weight: 400;
+}
+.img-card.active label span {
+    font-size: 1rem;
+}
+.pla h1{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 5px ;
+}
+.tour{
+    
+	margin: 20px;
+	display: flex;
+	gap: 5px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.course-img {
+	height: 280px;
+	width: 400px;
+	padding: 5px;
+	border-radius: 1rem;
+	box-shadow: 1px 2px 10px 2px black;
+    float: left;
+    margin-right: 15px;
+}
+#atm{
+    
+    margin: 12px;
+    padding: 35px;
+    padding-left: 50px;
+}
+.fl{
+    padding: 8px;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+}
+.hed-sub img{
+    margin-bottom: 10px;
+    height: 400px;
+    width: 600px;
+    padding: 5px;
+	border-radius: 1rem;
+	box-shadow: 1px 2px 10px 2px black;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .img-card img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .ts{
+        flex-direction: column;
+    }
+    .container {
+        width: 100vw;
+    }
+    .course-img {
+        height: 200px;
+        width: 250px;
+        padding: 5px;
+        border-radius: 1rem;
+        box-shadow: 1px 2px 10px 2px black;
+        float: left;
+        margin-right: 15px;
+    }
+    .fl{
+        padding: 8px;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
+    .hed-sub img{
+        margin-bottom: 10px;
+        height: 170px;
+        width: 300px;
+        padding: 5px;
+        border-radius: 1rem;
+        box-shadow: 1px 2px 10px 2px black;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
