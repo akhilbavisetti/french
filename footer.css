@@ -1,0 +1,29 @@
+.food{
+    margin: 50px;
+}
+.food-co{
+	margin-top: 15px;
+	display: flex;
+	gap: 5px;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.fdim{
+	height: 300px;
+	width: 400px;
+	padding: 5px;
+	border-radius: 1rem;
+	box-shadow: 1px 2px 10px 2px black;
+}
+.food-t{
+	margin-top: 5px;
+    font-size: 30px;
+}
+.food-t > p{
+	margin-top: 2px;
+}
+#vict{
+    margin: 50px;
+    padding: auto;
+}
